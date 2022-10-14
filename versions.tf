@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     region = "us-east-1"
-    bucket = "netzon-ks-terraform"
+    bucket = "netzon-ks-terraform" //adjust accordingly
     key    = "terraform/terraform.tfstate"
   }
 }
