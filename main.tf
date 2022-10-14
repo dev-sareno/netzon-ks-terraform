@@ -88,3 +88,17 @@ EOF
     Name = "demo-ec2"
   }
 }
+
+// S3
+resource "aws_s3_bucket" "demo_s3_bucket" {
+  bucket = "netzon-demo-s3-bucket"
+
+  tags = {
+    Name = "netzon-demo-s3-bucket"
+  }
+}
+
+resource "aws_s3_bucket_acl" "example" {
+  bucket = aws_s3_bucket.demo_s3_bucket.id
+  acl    = "private"
+}
