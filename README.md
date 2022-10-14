@@ -22,6 +22,7 @@ Netzon knowledge sharing on Terraform and Cloud Infrastructure automation
     ```shell
     $ aws s3api create-bucket --bucket netzon-ks-terraform
     ```
+    **Note:** You may need to use other s3 bucket name other than `netzon-ks-terraform`
 1. [Optional] Set Terraform variable to environment
     ```shell
     $ export TF_VAR_ssh_public_key_base64==**************
