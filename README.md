@@ -1,6 +1,10 @@
 # netzon-ks-terraform
 Netzon knowledge sharing on Terraform and Cloud Infrastructure automation
 
+## :warning: Important Notes
+1. The created resources may incur charges, check and adjust them accordingly
+2. Don't forget to destroy all resources including the S3 bucket that holds Terraform state
+
 ## Requirements
 1. Properly installed Terraform CLI *([installation guide](https://learn.hashicorp.com/tutorials/terraform/install-cli))*
 1. IAM User with `AdministratorAccess` permission *(given permission is for demo purposes only, adjust accordingly)*
