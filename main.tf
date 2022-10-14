@@ -73,6 +73,8 @@ module "ec2_instance" {
   key_name               = aws_key_pair.demo_keypair.key_name
   vpc_security_group_ids = [aws_security_group.allow_all.id]
   subnet_id              = module.vpc.public_subnets[0]
+
+  // install and enable nginx + modify index html
   user_data              = <<EOF
 #!/bin/bash
 sudo yum update -y
