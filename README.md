@@ -25,7 +25,7 @@ Netzon knowledge sharing on Terraform and Cloud Infrastructure automation
     **Note:** You may need to use other s3 bucket name other than `netzon-ks-terraform`
 1. [Optional] Set Terraform variable to environment
     ```shell
-    $ export TF_VAR_ssh_public_key_base64==**************
+    $ export TF_VAR_ssh_public_key_base64=**************
     ```
 
 ## Terraform
